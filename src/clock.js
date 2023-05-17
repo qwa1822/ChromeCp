@@ -21,7 +21,7 @@ const getNowDate=()=>{
 }
 
 const setNowDate=(month,date,day)=>{
-  dateEl.textContent=`${month}월 ${date}월 ${day}일`
+  dateEl.textContent=`${month}월 ${date}일 `
 }
 
 
