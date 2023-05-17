@@ -13,14 +13,13 @@ const getNowDate=()=>{
   let day=nowDate.getDay();
 
 
-  console.log(month,date,day);
 
-  setNowDate(month,date,day);
+  setNowDate(month,date);
 
 
 }
 
-const setNowDate=(month,date,day)=>{
+const setNowDate=(month,date)=>{
   dateEl.textContent=`${month}월 ${date}일 `
 }
 
