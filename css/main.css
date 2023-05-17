@@ -1,0 +1,246 @@
+:root {
+  --xlarge: 140px;
+  --large: 28px;
+  --medium: 18px;
+  --small: 16px;
+  --xsmall: 14px;
+
+}
+
+body {
+
+  background-image: url('../이미지/스즈메2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0 auto;
+  width: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+
+}
+
+.main-container .main-wrapper {
+  text-align: center;
+  position: fixed;
+}
+
+.main-wrapper .date {
+  font-size: var(--large);
+}
+
+.main-wrapper .time {
+  font-size: var(--xlarge);
+  margin-top: -35px;
+  font-weight: 400;
+}
+
+.main-wrapper .search {
+  display: flex;
+  justify-content: center;
+
+}
+
+.search #search-input {
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-style: var(--medium);
+  padding: 15px 0px;
+  color: white;
+  border-radius: 30px;
+  border: 0px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+
+
+.search #search-input::placeholder {
+
+  color: rgb(169, 169, 169);
+  font-style: var(--medium);
+}
+
+.quote {
+
+  font-size: var(--small);
+  position: fixed;
+  bottom: 0;
+  max-width: 800px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: center;
+
+}
+
+.bookmark-open {
+  width: 240px;
+  padding: 15px 30px;
+  font-size: var(--xsmall);
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
+
+
+
+
+}
+
+.bookmark-close {
+  width: 240px;
+  padding: 15px 30px;
+  font-size: var(--xsmall);
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
+
+
+
+
+}
+
+.bookmark-close div {
+  cursor: pointer;
+}
+
+
+.bookmark-open div {
+  cursor: pointer;
+}
+
+.bookmark-bar {
+  width: 240px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  min-height: calc(100vh - 70px);
+  padding: 10px 30px;
+  color: white;
+
+}
+
+#bookmark-item-add-btn {
+  padding: 10px;
+  font-size: var(--small);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: rgba(241, 241, 241, 0.2) 0.5px solid;
+  margin-bottom: 35px;
+  margin-top: 10px;
+
+}
+
+#bookmark-item-add-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bookmark-item-input-form {
+  border-radius: 5px;
+
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: rgba(241, 241, 241, 0.2) 0.5px solid;
+  font-size: var(--small);
+  padding: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bookmark-item-input-form .bookmark-input {
+  margin-bottom: 12px;
+}
+
+.bookmark-item-input-form .bookmark-input .label {
+  margin-bottom: 3px;
+  font-size: var(--xsmall);
+}
+
+.bookmark-input input {
+  width: 200px;
+  height: 20px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.bookmark-item-input-btn {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--xsmall);
+  margin-top: 5px;
+}
+
+.bookmark-item-input-btn div {
+  padding: 5px 35px;
+  border-radius: 5px;
+  border: rgba(241, 241, 241, 0.2) 0.5px solid;
+  cursor: pointer;
+
+}
+
+.bookmark-item-input-btn div:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bookmark-list a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+
+}
+
+.bookmark-list .url-icon {
+  margin-right: 8px;
+}
+
+.url-icon img {
+  vertical-align: middle;
+}
+
+.bookmark-list .bookmark-item {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: rgba(241, 241, 241, 0.2) 0.5px solid;
+  font-size: var(--small);
+  padding: 15px;
+  margin-bottom: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookmark-item .del-btn {
+  color: lightgray;
+  vertical-align: center;
+
+  font-size: var(--xsmall);
+
+  cursor: pointer;
+
+}

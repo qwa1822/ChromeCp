@@ -1,0 +1,84 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="main-wrapper">
+        <div class="today-info">
+          <div class="date" id="date">
+          <!-- 날짜& 요일 -->
+          </div>
+          <div class="time" id="time">
+          <!-- 현재  시간 -->
+          </div>
+        </div>
+
+        <div class="search">
+          <input type="text" autocomplete="off" id="search-input" placeholder="검색어를 입력하세요">
+        </div>
+
+     
+
+      </div>
+      <div class="quote" id="quote">
+        <!-- 명언 -->
+      </div>
+
+    
+
+    </div>
+
+    <div class="bookmark-open" id="bookmark-open">
+      <div id="bookmark-open-btn" class="bookmark-open-btn">북마크 닫기</div>
+    </div>
+
+    <div class="bookmark-close" id="bookmark-close">
+      <div id="bookmark-close-btn">북마크 열기</div>
+    </div>
+    <div class="bookmark-bar" id="bookmark-bar">
+      <!-- 북마크바 -->
+      <div id="bookmark-item-add-btn"class="bookmark-item-add-btn">
+        +북마크 추가
+      </div>
+      <div id="bookmark-item-input-form" class="bookmark-item-input-form">
+        <div class="bookmark-input">
+          <div class="new-bookmark-name">
+            <div class="label">이름</div>
+            <input id="new-bookmark-name-input" type="text">
+          </div>
+          <div class="new-bookmark-url">
+            <div class="label">주소</div>
+            <input id="new-bookmark-url-input" type="text">
+          </div>
+        </div>
+        <div class="bookmark-item-input-btn">
+          <div class="cancel-btn" id="cancel-btn">취소</div>
+          <div class="add-btn" id="add-btn">추가</div>
+        </div>
+      </div>
+      <div class="bookmark-list" id="bookmark-list"></div>
+    </div>
+    
+   
+  
+   
+
+
+    <script src="./src/clock.js"></script>
+    <script src="./src/search.js"></script>
+    <script src="./src/quote.js"></script>
+    <script src="./src/bookmark.js"></script>
+    <script src="./src/bookmarkAdd.js"></script>
+  </body>
+  </html>
