@@ -11,3 +11,4 @@
 <span> 검색어 입력후 Enter</span>
 
 <h4>북마크 기능 추가</h4>
+<span><bold>북마크 추가삭제 및 local저장 </bold></span>
